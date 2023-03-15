@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>OLADIMEJI</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="base">
+
+        <nav>
+            <h2 class="logo"><span>OLA</span>DIMEJI</h2>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="menu">
+                <li><a href="portfolio.html">// About Me</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <!-- <li><a href="#">Skills</a></li> -->
+                <li><a href="contact.html">// Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h4>Hello,</h4>
+            <h4>My Name is</h4>
+            <h3><span class="auto-typed"></span></h3>
+                <a href="portfolio.html" class="btn">PORTFOLIO</a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".auto-typed", {
+                strings: ["Oladimeji"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
+   
+   <script type="text/javascript">
+       window.addEventListener('scroll', reveal);
+   
+       function reveal(){
+           var reveals = document.querySelectorAll('.reveal');
+   
+           for(var i = 0; i < reveals.length; i++){
+               var windowheight = window.innerHeight;
+               var revealtop = reveals[i].getBoundingClientRect().top;
+               var revealpoint = 150;
+   
+               if(revealtop < windowheight - revealpoint){
+                   reveals[i].classList.add('active');
+               }
+               else{
+                   reveals[i].classList.remove('active'); 
+               }
+           }
+       }
+   </script> 
+   <script>
+       function menuToggle(){
+           const toggleMenu = document.querySelector('.toggleMenu');
+           const menu = document.querySelector('.menu');
+           toggleMenu.classList.toggle('active')
+           menu.classList.toggle('active')
+       }
+   </script>
+</body>
+</html>

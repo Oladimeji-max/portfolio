@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="portfolio.css">
+<body>
+     <div class="base">
+         <nav>
+             <h2 class="logo">Portfo<span>lio</span></h2>
+             <div class="toggleMenu" onclick="menuToggle();"></div>
+             <ul class="menu">
+                 <li><a href="index.html">// Home</a></li>
+                 <li><a href="#About">// About Me</a></li>
+                 <li><a href="#service">// Services</a></li>
+                 <li><a href="contact.html">// Contact</a></li>
+             </ul>
+             <a href="contact.html" class="btn">Hire Me</a>
+         </nav>
+ 
+         <div class="content">
+             <h4>Hi, my name is</h4>
+             <h1>Sholanke <span class>Oladimeji</span></h1>
+             <h3>I'm <span class="auto-typed"></span></h3>
+             <div class="newslatter"> 
+                 <form>
+                     <input type="email" name="email" id="mail" placeholder="sholanke49@gmail.com">
+                     <input type="submit" name="submit" value="Lets Start"> 
+                 </form>
+             </div> 
+         </div>
+     </div>
+     <section id="About" class="about">
+         <div class="main">
+             <img src="../images/finest.PNG">
+             <div class="about-text reveal">
+                 <h2>About Me </h2>
+                 <h5>FrontEnd <span>Developer</span></h5>
+                 <div class="about_text">
+                    <p>Hey there, I am a front-end web developer based in Nigeria, currently studing Computer Science at Olabisi Onabanjo University. I provide clean code and pixel
+                        perfect design, make the website more interactive with web
+                        animations. I also build a responsive deisgn that makes your website accessible to all users, regardless of their device.
+                    </p>
+                 </div>
+
+                 <button type="button">Let's Talk</button>
+             </div>
+         </div>
+     </section>
+
+     <div id="service" class="service">
+         <div class="title">
+             <h2>My Services</h2>
+         </div>
+         <div class="box reveal">
+            <div class="card">
+                <img src="../images/bars-solid.svg">
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p class="web_dev">Every website should be built with two primary goals: Firstly, it needs
+                        to work across all devices. Secondly, it needs to be as fast as possible.
+                    </p>
+                    <p style="text-align: center;">
+                       <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+              <img src="../images/user-solid.svg">
+              <h5>FrontEnd Dev</h5>
+              <div class="pra">
+                  <p class="FD">
+                      Passionate about UI/UX. Over 3 years of Development experience in HTML, CSS and javascript.
+                  </p>
+                  <p style="text-align: center;">
+                     <a class="button" href="#">Read More</a>
+                  </p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="../images/bell-solid.svg">
+              <h5>Investigative</h5>
+              <div class="pra">
+                  <p class="IG">
+                     Able to balance creative design with technical skill involved in a website.
+                     Skilled in thinking about what makes the website most appealing to visitors while still maintaining functionality.
+                  </p>
+                  <p style="text-align: center;">
+                     <a class="button" href="#">Read More</a>
+                  </p>
+              </div>
+            </div>
+        </div>
+     </div>
+     <section id="Contact">
+
+           <div class="contact-me">
+               <p>Let Me Get You An Awesome Website.</p>
+               <a class="button-two" href="contact.html">Hire Me</a>
+           </div>
+
+    </section>
+
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <script>
+         var typed = new Typed(".auto-typed", {
+             strings: ["a Web Developer", "Specialised in FrontEnd Development"],
+             typeSpeed: 150,
+             backSpeed: 150,
+             loop: true
+         })
+     </script>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active'); 
+            }
+        }
+    }
+</script> 
+<script>
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const menu = document.querySelector('.menu');
+        toggleMenu.classList.toggle('active')
+        menu.classList.toggle('active')
+    }
+</script>
+</body>
+</html>

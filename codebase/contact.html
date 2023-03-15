@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact .css">
+
+</head>
+<body>
+    <div class="base">
+        <nav>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="menu">
+                <li><a href="index.html">// Home</a></li>
+                <li><a href="portfolio.html">// About Me</a></li>
+                <!-- <li><a href="#service">Services</a></li> -->
+                <!-- <li><a href="#">Skills</a></li> -->
+            </ul>
+        </nav>
+        <p class="in-touch">get in touch</p>
+        <p class="contact_text">CONTACT</p>
+        <div class="holder">
+             <div class="phone">
+                <img src="../images/phone-solid.svg">
+                <p  class="num">08136170619</p>
+             </div>
+             <div class="mail">
+                <img src="../images/envelope-regular.svg">
+                <p  class="email">sholanke49@gmail.com</p>
+             </div>
+             <div class="telegram">
+                <img src="../images/telegram.svg">
+                <p  class="num">shinnely_jr</p>
+             </div>
+        </div>
+    </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const menu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+    .base{
+        height: 100vh;
+        width: 100%;
+        background-color: #1b1a1a;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        padding-top: 30px; 
+        justify-content: center;
+        margin-bottom: 35px;
+
+    }
+    span{
+        color: #f9004d;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        padding: 0px 15px;
+    }
+    nav ul li a{
+        color: #fff;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    nav ul li a:hover{
+        color: #f9004d;
+        transition: .4s;
+    }
+    .in-touch{
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        /* text-transform: capitalize;  */
+    }
+    .contact_text{
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        font-size: 35px;
+    }
+    .holder{
+        margin-left: 38%;
+        margin-right: 38%;
+        margin-top: 5%;
+        display: block;
+    }
+    img{
+        height: 35px;
+        border: 2px solid black;
+        border-radius: 50%;
+        padding: 5px;
+        margin-left: 16px;
+    }
+    .phone{
+        background-color: #fff;
+        padding: 3px 5px;
+        border-radius: 2px;
+        display: flex;
+    }
+    .num,.email{
+        margin-top: 7px;
+        margin-left: 19px;
+        font-size: 20px;
+    }
+    .mail,.telegram{
+        margin-top: 15px;
+        background-color: #fff;
+        display: flex;
+        padding: 3px 5px;
+        border-radius: 2px;
+    }
+    @media (max-width: 1191px) {
+        .holder{
+            margin-top: 8%;
+        }
+        .phone{
+            padding: 10px 5px;
+            margin-right: -15px;
+        }
+        .mail,.telegram{
+            padding: 10px 5px;
+            margin-right: -15px;
+        }
+    }
+    @media (max-width: 1191px) {
+        .phone{
+            padding: 10px 15px 5px;
+            margin-right: -35px;
+        }
+        .mail,.telegram{
+            padding: 10px 15px 5px;
+            margin-right: -35px;
+        }
+        .holder{
+            margin-left: 34%;
+            margin-right: 36%;
+        }
+        .num,.email{
+            margin-top: 7px;
+            margin-left: 19px;
+            font-size: 25px;
+        }
+        .contact_text{
+            margin-top: 15px;
+            font-size: 50px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 993px) {
+        .phone{
+            padding: 10px 5px;
+            margin-right: -35px;
+        }
+        .mail,.telegram{
+            padding: 10px 5px;
+            margin-right: -35px;
+        }
+    }
+    @media (max-width: 963px) {
+        .phone{
+            margin-right: -45px;
+        }
+        .mail,.telegram{
+            margin-right: -45px;
+        }
+    }
+    @media (max-width: 937px) {
+        .phone{
+            margin-right: -65px;
+        }
+        .mail,.telegram{
+            margin-right: -65px;
+        }
+        .holder{
+            margin-left: 32%;
+            margin-right: 36%;
+        }
+        ul.menu{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            background: #1b1a1a;
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .menu.active{
+            display: flex;
+            
+        }
+        .menu li a{
+            font-size: 38px;
+            text-decoration: none;
+        }
+        nav ul li{
+            padding: 10px;
+        }
+        .toggleMenu{
+            position: relative;
+            width: 25px;
+            height: 25px;
+            margin-left: 80%;
+            margin-top: -20px;
+            background: url(../images/icons8-hamburger-menu-24.png);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            background-position: center;
+            z-index: 1000;
+    
+        }
+        .toggleMenu.active{
+            position: fixed;
+            right: 110px;
+            background: url(../images/icons8-close-80.png);
+            background-size: 22px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .base{
+            padding: 40px 40px 0;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 893px) {
+        .phone{
+            margin-right: -65px;
+        }
+        .mail,.telegram{
+            margin-right: -65px;
+        }
+        .num,.email{
+            font-size: 22px;
+        }
+        .holder{
+            margin-left: 30%;
+            margin-right: 34%;
+        }
+    }
+    @media (max-width: 741px) {
+        .holder{
+            margin-left: 27%;
+            margin-right: 34%;
+        }
+    }
+    @media (max-width: 677px) {
+        .holder{
+            margin-left: 26%;
+            margin-right: 34%;
+        }
+        .phone,.mail,.telegram{
+            padding-left: 2px;
+        }
+    }
+    @media (max-width: 677px) {
+        .holder{
+            margin-left: 24%;
+            margin-right: 34%;
+        }
+    }
+    @media (max-width: 638px) {
+        .holder{
+            margin-left: 22%;
+            margin-right: 34%;
+        }
+    }
+    @media (max-width: 615px) {
+        .toggleMenu.active{
+            right: 80px;
+        }
+    }
+    @media (max-width: 597px) {
+        .holder{
+            margin-left: 20%;
+            margin-right: 32%;
+        }
+    }
+    @media (max-width: 555px) {
+        .holder{
+            margin-left: 16%;
+            margin-right: 30%;
+        }
+    }
+    @media (max-width: 510px) {
+        .holder{
+            margin-left: 14%;
+            margin-right: 30%;
+        }
+        .phone{
+            padding: 10px 5px;
+        }
+        .mail,.telegram{
+            margin-top: 18px;
+            padding: 10px 5px;
+        }
+    }
+    @media (max-width: 488px) {
+        .mail,.telegram{
+            margin-top: 20px;
+        }
+        .num,.email{
+            font-size: 19px;
+        }
+    }
+    @media (max-width: 440px) {
+        .holder{
+            margin-left: 12%;
+            margin-right: 30%;
+        }
+        .num,.email{
+            margin-left: 15px;
+        }
+    }
+    @media (max-width: 420px) {
+        .holder{
+            margin-left: 10%;
+            margin-right: 30%;
+        }
+        .num,.email{
+            margin-left: 15px;
+        }
+    }
+    @media (max-width: 402px) {
+        .holder{
+            margin-left: 8%;
+            margin-right: 28%;
+        }
+    }
+    @media (max-width: 380px) {
+        .holder{
+            margin-left: 8%;
+            margin-right: 28%;
+        }
+        .phone{
+            padding: 10px 0px;
+        }
+        .mail,.telegram{
+            padding: 10px 0px;
+        }
+    }
+    @media (max-width: 372px) {
+        .holder{
+            margin-left: 6%;
+            margin-right: 28%;
+        }
+        .phone{
+            padding: 10px -3px;
+        }
+        .mail,.telegram{
+            padding: 10px -3px;
+        }
+        .num,.email{
+            margin-left: 10px;
+        }
+    }
